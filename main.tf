@@ -58,3 +58,8 @@ resource "aws_instance" "web" {
 output "web_ip" {
   value = aws_instance.web.public_ip
 }
+##################ansible.cfg############################
+
+[defaults]
+remote_user=ubuntu
+host_key_checking= False
